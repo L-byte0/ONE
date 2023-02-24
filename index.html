@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <h1>Encriptador de texto</h1>
+
+    <div class="container">
+      <form>
+        <div class="encriptar card">
+          <label for="ingresar-texto" class="encabezado">
+            <strong>Ingresar texto (Sin caracteres especiales)</strong>
+          </label>
+
+          <br /><br />
+
+          <textarea
+            name="ingresar-texto"
+            placeholder="Ingrese su texto"
+            id="entrada"
+            class="input_Text"
+            cols="40"
+            rows="10"
+          ></textarea>
+
+          <br />
+
+          <button id="encriptar" class="btn btn-encriptar">
+            Encriptar texto
+          </button>
+
+          <button id="desencriptar" class="btn btn-desencriptar">
+            Desencriptar texto
+          </button>
+        </div>
+
+        <div class="desencriptar card">
+          <label for="salida-texto" class="encabezado">
+            <strong>Texto encriptado</strong>
+          </label>
+
+          <br /><br />
+          
+          <textarea
+            name="salida-texto"
+            id="salida"
+            class="card"
+            cols="40"
+            rows="10"
+          ></textarea>
+
+          <button class="btn btn-limpiar" id="limpiar">Limpiar campos</button>
+          <button id="copiar" class="btn btn-copiar">Copiar texto</button>
+
+        </div>
+      </form>
+
+
+    </div>
+    <h4>Hecho por: Luis López Urbina @2023</h4>
+
+    
+    <script src="app.js"></script>
+  </body>
+</html>
